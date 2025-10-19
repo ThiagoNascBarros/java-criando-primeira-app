@@ -1,34 +1,34 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Esse é o Screen Match!\n");
-        System.out.println("Filme: Top Gun: Maverick");
+        Scanner ler = new Scanner(System.in);
 
-        int anoDeLancamento = 2022;
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
-        boolean incluidoNoPlano = true;
-        double notaDoFilme = 8.1;
+        String tipoDaConta = "Corrente", nomeDoCliente = "Thiago";
+        double saldo = 9.000;
 
-        // Média calculada por três notas
-        double media = (9.8 + 6.3 + 8.0) / 3;
-        // Utilizando printf para formatar as saídas de números com casas decimais
-        System.out.printf("Média do Filme: %.2f\n", media);
 
-        // String não é um tipo primitivo no Java, ela é uma classe
-        String sinopse;
-        sinopse = """
-                Filme Top Gun
-                Filme de aventura com galã dos anos 80
-                Muito bom!
-                Ano de lançamento:
-                """ + anoDeLancamento;
-        System.out.println(sinopse);
+        System.out.println("*************\n" +
+                "Bem-vindo ao BACash(Banco Alura Cash)\n" +
+                "Inicialize seus dados para entrar em sua conta\n" +
+                "*************\n");
+        System.out.println("*************");
+        while (true) {
+            System.out.println("\n*************");
+            System.out.println("Dados iniciais do cliente:");
+            System.out.println("Nome: " + nomeDoCliente);
+            System.out.println("Tipo conta: " + tipoDaConta);
+            System.out.printf("Saldo inicial: %.3f\n", saldo);
+            System.out.println("*************\n");
+            System.out.println("\nOperações\n1- Consultar saldos\n2- Receber valor\n3- Transferir valor\n4- Sair\n");
+            System.out.print("Digite a opção desejada: ");
+            int opcao = ler.nextInt();
 
-        int classificacao;
-        // Casting -  Transformando valores no Java - Double -> Int
-        classificacao = (int) media / 2;
-        System.out.println(classificacao);
+        }
+
 
     }
+
 }

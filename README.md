@@ -1,7 +1,9 @@
-# Java: Criando sua primeira aplicação - Curso Alura e Formação Oracle Next Education
+# Challenge of Course "Java: Criando sua primeira aplicação"
 
-## Sobre 
-Repositório criado para armazenar e manter os aprendizados recebidos do curso.
+## About challenge
 
-## Tecnologias
-- Java 17
+
+## Functional requirements
+
+
+## Non-Functional requirements
